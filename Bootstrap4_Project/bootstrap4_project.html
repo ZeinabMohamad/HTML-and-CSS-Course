@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Project</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 60px;
+        }
+        .movie-card img {
+            height: 250px;
+            object-fit: cover;
+        }
+        .badge-info {
+            margin-right: 5px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#showtimes">Showtimes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#deals">Deals</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Jumbotron Section -->
+<header class="jumbotron jumbotron-fluid bg-info text-white text-center">
+    <div class="container">
+        <h1 class="display-4">Welcome to The Bootstrap Project</h1>
+        <p class="lead">Find the latest showtimes for your favorite movies</p>
+    </div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="container py-5">
+    <h2>About Us</h2>
+    <p>We provide the most accurate and up-to-date movie showtimes for your local cinema. Browse through our list of movies, and find your perfect showtime!</p>
+</section>
+
+<!-- Showtimes Section -->
+<section id="showtimes" class="container py-5">
+    <h2>Showtimes</h2>
+
+    <!-- Movie Cards (Bootstrap Cards) -->
+    <div class="row">
+        <!-- Kong: Skull Island -->
+        <div class="col-md-4">
+            <div class="card movie-card">
+                <img src="https://lumiere-a.akamaihd.net/v1/images/p_beautyandthebeast_19752_32e65c36.jpeg" class="card-img-top" alt="Kong Skull Island">
+                <div class="card-body">
+                    <h5 class="card-title">Kong: Skull Island</h5>
+                    <p class="card-text">A group of scientists explores an uncharted island in the Pacific, discovering a place full of monsters, including the mighty Kong.</p>
+                    <!-- Showtime Badges -->
+                    <span class="badge badge-info">12:00 p.m.</span>
+                    <span class="badge badge-info">1:30 p.m.</span>
+                    <span class="badge badge-info">3:00 p.m.</span>
+                    <span class="badge badge-info">5:30 p.m.</span>
+                    <span class="badge badge-info">7:00 p.m.</span>
+                    <span class="badge badge-info">9:30 p.m.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ghost in the Shell -->
+        <div class="col-md-4">
+            <div class="card movie-card">
+                <img src="https://m.media-amazon.com/images/M/MV5BNzBkNjdjZTctNjdhOS00NmIyLTlkNjQtY2EwNGMwYmZjNTIxXkEyXkFqcGc@._V1_.jpg" class="card-img-top" alt="Ghost in the Shell">
+                <div class="card-body">
+                    <h5 class="card-title">Ghost in the Shell</h5>
+                    <p class="card-text">In the near future, a cyber-enhanced policewoman must track down a mysterious hacker who is manipulating technology to his advantage.</p>
+                    <!-- Showtime Badges -->
+                    <span class="badge badge-info">12:00 p.m.</span>
+                    <span class="badge badge-info">1:30 p.m.</span>
+                    <span class="badge badge-info">3:00 p.m.</span>
+                    <span class="badge badge-info">5:30 p.m.</span>
+                    <span class="badge badge-info">7:00 p.m.</span>
+                    <span class="badge badge-info">9:30 p.m.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Beauty and the Beast -->
+        <div class="col-md-4">
+            <div class="card movie-card">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTcwMjcxYTQtYjJlOS00YTE1LWIyZGYtOGRlOTBlMWZmYTliXkEyXkFqcGc@._V1_.jpg" class="card-img-top" alt="Beauty and the Beast">
+                <div class="card-body">
+                    <h5 class="card-title">Beauty and the Beast</h5>
+                    <p class="card-text">A young woman is imprisoned in a castle with a Beast who is under a spell. She learns to look beyond his exterior and recognize the kind heart and soul of the true Prince within.</p>
+                    <!-- Showtime Badges -->
+                    <span class="badge badge-info">12:00 p.m.</span>
+                    <span class="badge badge-info">1:30 p.m.</span>
+                    <span class="badge badge-info">3:00 p.m.</span>
+                    <span class="badge badge-info">5:30 p.m.</span>
+                    <span class="badge badge-info">7:00 p.m.</span>
+                    <span class="badge badge-info">9:30 p.m.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Deals Section -->
+<section id="deals" class="container py-5">
+    <h2>Current Deals</h2>
+    <p>Check out our amazing deals on movie tickets, popcorn, and more!</p>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2025 Zeinab Mohamad Bootstrap. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
